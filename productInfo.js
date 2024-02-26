@@ -18,8 +18,6 @@ function displayCoatInfo(coat) {
     `
     const addToCartBtn = document.createElement("button");
     addToCartBtn.addEventListener("click", () => {
-        console.log("added to cart")
-
         let currentCart = sessionStorage.getItem("cartItems");
         let updateCart = (currentCart += `#${coat.title}`)
         sessionStorage.setItem("cartItems", updateCart)
