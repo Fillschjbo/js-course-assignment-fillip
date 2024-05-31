@@ -25,7 +25,7 @@ function displayCoat(coat) {
     coatDiv.addEventListener("click", () => {
         sessionStorage.setItem("selectedCoat", JSON.stringify(coat));
         window.location.href =
-            "http://localhost:63342/js-course-assignment-fillip/productInfo.html";
+            "productInfo.html";
     });
     coatListDiv.appendChild(coatDiv);
 }
