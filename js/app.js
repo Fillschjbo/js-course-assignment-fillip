@@ -6,7 +6,6 @@ fetch("https://api.noroff.dev/api/v1/rainy-days")
     .then((response) => response.json())
     .then((raincoatResultData) => {
         raincoatData = raincoatResultData;
-        console.log(raincoatData);
         displayCoats(raincoatData);
     });
 
